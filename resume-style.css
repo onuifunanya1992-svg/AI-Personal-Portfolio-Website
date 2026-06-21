@@ -1,0 +1,358 @@
+/* ========================================== */
+/* ATS-Compliant Resume Stylesheet            */
+/* Author: Kimi AI Assistant                  */
+/* Date: June 2026                            */
+/* Description: Clean, minimal styling for    */
+/* ATS-friendly resume layout                 */
+/* ========================================== */
+
+:root {
+    --primary-color: #1a237e;
+    --secondary-color: #333333;
+    --accent-color: #1565c0;
+    --light-gray: #f5f5f5;
+    --border-color: #dddddd;
+    --text-color: #333333;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: #e8e8e8;
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+/* Resume Page Container */
+.resume-page {
+    max-width: 850px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 3rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Header Section */
+.resume-header {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.resume-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.resume-title {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.resume-contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.resume-contact-bar span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.resume-contact-bar i {
+    color: var(--accent-color);
+    font-size: 0.85rem;
+}
+
+/* Resume Sections */
+.resume-section {
+    margin-bottom: 2rem;
+}
+
+.section-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+}
+
+.section-content {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+/* Skills Table */
+.skills-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.skill-row {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.95rem;
+}
+
+.skill-category {
+    font-weight: 600;
+    color: var(--primary-color);
+    min-width: 220px;
+    flex-shrink: 0;
+}
+
+.skill-list {
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Job Entries */
+.job-entry {
+    margin-bottom: 1.5rem;
+}
+
+.job-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.job-company {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.job-date {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-left: auto;
+}
+
+.job-duties {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.job-duties li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.job-duties li::before {
+    content: '▸';
+    position: absolute;
+    left: -1rem;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Education */
+.education-entry {
+    margin-bottom: 1rem;
+}
+
+.degree {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.school {
+    font-weight: 600;
+    color: var(--accent-color);
+    display: block;
+}
+
+.edu-date {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.edu-details {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Certifications */
+.cert-list {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.cert-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.cert-list li::before {
+    content: '✓';
+    position: absolute;
+    left: -1rem;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Projects */
+.project-entry {
+    margin-bottom: 1.5rem;
+}
+
+.project-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.project-tech {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Resume Footer */
+.resume-footer {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Print Actions */
+.print-actions {
+    max-width: 850px;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.print-btn, .back-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.print-btn {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+}
+
+.print-btn:hover {
+    background: var(--accent-color);
+}
+
+.back-btn {
+    background: var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.back-btn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .resume-page {
+        box-shadow: none;
+        padding: 1rem;
+    }
+
+    .print-actions {
+        display: none;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .resume-page {
+        padding: 1.5rem;
+    }
+
+    .resume-name {
+        font-size: 1.8rem;
+    }
+
+    .resume-contact-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .skill-row {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .job-header {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .job-date {
+        margin-left: 0;
+    }
+}

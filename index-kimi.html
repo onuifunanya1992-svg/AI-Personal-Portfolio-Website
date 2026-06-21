@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========================================== -->
+    <!-- Personal Portfolio Website                 -->
+    <!-- Author: Kimi AI Assistant                  -->
+    <!-- Date: June 2026                            -->
+    <!-- Description: One-page portfolio with       -->
+    <!-- ATS-compliant resume, skills showcase,     -->
+    <!-- and contact information                    -->
+    <!-- ========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Software Developer Portfolio - Expertise in HTML, CSS, TailwindCSS, VIPE Coding, VIPE Engineering, JavaScript, and Natural Language Processing">
+    <meta name="keywords" content="software developer, HTML, CSS, TailwindCSS, VIPE, JavaScript, NLP, portfolio">
+    <title>My Portfolio | Software Developer</title>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style-kimi.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- STICKY NAVIGATION / HEADER SECTION         -->
+    <!-- Fixed at top, contains menu links to       -->
+    <!-- different sections of the one-page site    -->
+    <!-- ========================================== -->
+    <header class="sticky-header">
+        <div class="header-container">
+            <!-- Logo / Brand Name on the left -->
+            <div class="logo-section">
+                <a href="#hero" class="logo-link">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    <span class="logo-text">DevPortfolio</span>
+                </a>
+            </div>
+
+            <!-- Navigation Menu - Links to page sections -->
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION                               -->
+    <!-- 30% vertical height, 100% width            -->
+    <!-- Photo on right, description on left          -->
+    <!-- Includes link to ATS-Compliant Resume      -->
+    <!-- ========================================== -->
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <!-- Left Side: Text Content & Description -->
+            <div class="hero-text-side">
+                <div class="hero-text-content">
+                    <!-- Greeting / Introduction -->
+                    <p class="hero-greeting">Hello, I'm <span class="name">Onu Ifunanya</span></p>
+                    
+                    <h1 class="hero-headline">
+                        A Software<br>Developer
+                    </h1>
+
+                    <!-- Expertise Description -->
+                    <div class="expertise-box">
+                        <h3 class="expertise-title">
+                            <i class="fas fa-code"></i> My Expertise
+                        </h3>
+                        <p class="expertise-description">
+                            I specialize in building modern, responsive web applications using 
+                            <strong>HTML</strong>, <strong>CSS</strong>, and <strong>TailwindCSS</strong> 
+                            for pixel-perfect designs. I am proficient in 
+                            <strong>VIPE Coding</strong> and <strong>VIPE Engineering</strong> methodologies, 
+                            enabling efficient, scalable development workflows. My skills extend to 
+                            <strong>JavaScript</strong> for dynamic interactivity and 
+                            <strong>Natural Language Processing (NLP)</strong> for building intelligent, 
+                            language-aware applications.
+                        </p>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta-group">
+                        <!-- Link to ATS-Compliant Resume/CV -->
+                        <a href="resume.html" class="cta-button cta-primary" target="_blank">
+                            <i class="fas fa-file-alt"></i>
+                            View My Resume
+                        </a>
+                        <a href="#contact" class="cta-button cta-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Developer Photo -->
+            <div class="hero-image-side">
+                <div class="hero-image-wrapper">
+                    <!-- Placeholder for developer photo -->
+                    <!-- Replace 'your-photo.jpg' with your actual photo file -->
+                    <img src="gallery/IMG_1144.JPG" 
+                         alt="Professional Software Developer Portrait" 
+                         class="hero-image"
+                         id="developer-photo">
+
+                    <!-- Decorative elements around photo -->
+                    <div class="photo-decoration photo-deco-1"></div>
+                    <div class="photo-decoration photo-deco-2"></div>
+                    <div class="photo-decoration photo-deco-3"></div>
+
+                    <!-- Floating skill badges -->
+                    <div class="floating-badge badge-html">HTML</div>
+                    <div class="floating-badge badge-css">CSS</div>
+                    <div class="floating-badge badge-js">JS</div>
+                    <div class="floating-badge badge-nlp">NLP</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- MAIN SECTION - SKILLS SHOWCASE             -->
+    <!-- Two rows, three columns of skill cards     -->
+    <!-- Each card explains what the skill solves   -->
+    <!-- ========================================== -->
+    <main class="main-content" id="skills">
+        <div class="main-container">
+
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">My Technical Skills</h2>
+                <p class="section-subtitle">Technologies and methodologies I use to solve real-world problems</p>
+            </div>
+
+            <!-- Skills Grid: 2 rows × 3 columns = 6 cards -->
+            <div class="skills-grid">
+
+                <!-- ========== ROW 1 ========== -->
+
+                <!-- Skill Card 1: HTML -->
+                <article class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-html5 skill-icon"></i>
+                    </div>
+                    <h3 class="skill-name">HTML</h3>
+                    <p class="skill-summary">
+                        <strong>Problem Solved:</strong> Structures web content semantically, ensuring accessibility, 
+                        SEO optimization, and proper document hierarchy for screen readers and search engines. 
+                        Creates the foundation for all web pages.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">Semantic Markup</span>
+                        <span class="tag">Accessibility</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                </article>
+
+                <!-- Skill Card 2: CSS -->
+                <article class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                    </div>
+                    <h3 class="skill-name">CSS</h3>
+                    <p class="skill-summary">
+                        <strong>Problem Solved:</strong> Transforms raw HTML into visually appealing, responsive 
+                        layouts that adapt to any device. Solves cross-browser compatibility issues and enables 
+                        animations, transitions, and modern design patterns.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">Responsive Design</span>
+                        <span class="tag">Animations</span>
+                        <span class="tag">Flexbox/Grid</span>
+                    </div>
+                </article>
+
+                <!-- Skill Card 3: TailwindCSS -->
+                <article class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon tailwind-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 
+                            C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 
+                            C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 
+                            c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 
+                            C10.337,13.382,8.976,12,6.001,12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">TailwindCSS</h3>
+                    <p class="skill-summary">
+                        <strong>Problem Solved:</strong> Accelerates development by eliminating custom CSS writing. 
+                        Provides utility-first classes for rapid prototyping, consistent design systems, and 
+                        maintainable codebases without CSS file bloat.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">Utility-First</span>
+                        <span class="tag">Rapid Prototyping</span>
+                        <span class="tag">Design Systems</span>
+                    </div>
+                </article>
+
+                <!-- ========== ROW 2 ========== -->
+
+                <!-- Skill Card 4: VIPE Coding -->
+                <article class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-terminal skill-icon"></i>
+                    </div>
+                    <h3 class="skill-name">VIPE Coding</h3>
+                    <p class="skill-summary">
+                        <strong>Problem Solved:</strong> Implements Visual-Integrated Programming Environment 
+                        techniques for code visualization, real-time debugging, and collaborative coding. 
+                        Reduces cognitive load and accelerates feature delivery through visual workflows.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">Visual Coding</span>
+                        <span class="tag">Real-time Debug</span>
+                        <span class="tag">Collaboration</span>
+                    </div>
+                </article>
+
+                <!-- Skill Card 5: VIPE Engineering -->
+                <article class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-cogs skill-icon"></i>
+                    </div>
+                    <h3 class="skill-name">VIPE Engineering</h3>
+                    <p class="skill-summary">
+                        <strong>Problem Solved:</strong> Applies Visual-Integrated Production Engineering 
+                        for streamlined CI/CD pipelines, automated testing, and deployment visualization. 
+                        Ensures reliable, scalable software delivery with minimal downtime.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">DevOps</span>
+                    </div>
+                </article>
+
+                <!-- Skill Card 6: Natural Language Processing -->
+                <article class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-brain skill-icon"></i>
+                    </div>
+                    <h3 class="skill-name">Natural Language Processing</h3>
+                    <p class="skill-summary">
+                        <strong>Problem Solved:</strong> Enables machines to understand, interpret, and generate 
+                        human language. Powers chatbots, sentiment analysis, text classification, and intelligent 
+                        search — bridging the gap between human communication and computer systems.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">Chatbots</span>
+                        <span class="tag">Sentiment Analysis</span>
+                        <span class="tag">Text AI</span>
+                    </div>
+                </article>
+
+            </div><!-- End Skills Grid -->
+        </div><!-- End Main Container -->
+    </main>
+
+    <!-- ========================================== -->
+    <!-- ABOUT SECTION                              -->
+    <!-- Contact details: Phone, Email, Socials     -->
+    <!-- ========================================== -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me and reach out for collaborations</p>
+            </div>
+
+            <div class="about-content">
+                <!-- About Text -->
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I am a passionate software developer dedicated to creating elegant, efficient, and 
+                        user-centered digital solutions. With expertise spanning frontend development, 
+                        visual programming environments, and artificial intelligence, I bring a unique 
+                        blend of technical precision and creative problem-solving to every project.
+                    </p>
+                    <p class="about-paragraph">
+                        My approach combines clean code architecture with modern design principles, 
+                        ensuring that every application I build is not only functional but also intuitive 
+                        and enjoyable to use. I am always eager to learn new technologies and collaborate 
+                        on innovative projects.
+                    </p>
+                </div>
+
+                <!-- Contact Details Card -->
+                <div class="contact-card" id="contact">
+                    <h3 class="contact-card-title">
+                        <i class="fas fa-address-card"></i> Contact Information
+                    </h3>
+
+                    <div class="contact-details">
+                        <!-- Phone Number -->
+                        <div class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+2348012345678" class="contact-value">+234 703 653 0972</a>
+                            </div>
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:onuifunanya1992@gmail.com" class="contact-value">onufunanya1992@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Facebook -->
+                        <div class="contact-item">
+                            <div class="contact-icon-wrapper facebook-bg">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Facebook</span>
+                                <a href="https://facebook.com/onu.funanya" target="_blank" class="contact-value">facebook.com/onu.ifunanya</a>
+                            </div>
+                        </div>
+
+                        <!-- Instagram -->
+                        <div class="contact-item">
+                            <div class="contact-icon-wrapper instagram-bg">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Instagram</span>
+                                <a href="https://instagram.com/joakim_concepts" target="_blank" class="contact-value">instagram/joakim_concepts</a>
+                            </div>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="contact-item">
+                            <div class="contact-icon-wrapper github-bg">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/onuifunanya1992-svg" target="_blank" class="contact-value">github.com/onuifunanya1992-svg</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- RESUME SECTION                             -->
+    <!-- Link to ATS-Compliant Resume page          -->
+    <!-- ========================================== -->
+    <section class="resume-section" id="resume">
+        <div class="resume-container">
+            <div class="resume-content">
+                <div class="resume-text">
+                    <h2 class="resume-title">My Professional Resume</h2>
+                    <p class="resume-description">
+                        I have prepared an ATS (Applicant Tracking System) compliant resume that is 
+                        optimized for modern recruitment software. It uses clean formatting, standard 
+                        section headings, and keyword-rich content to ensure maximum visibility.
+                    </p>
+                    <div class="resume-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>ATS-Friendly Format</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Keyword Optimized</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clean & Professional</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-actions">
+                    <a href="resume.html" class="cta-button cta-primary" target="_blank">
+                        <i class="fas fa-eye"></i>
+                        View Resume Online
+                    </a>
+                    <a href="#" class="cta-button cta-outline" download>
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- STICKY FOOTER                              -->
+    <!-- Social links and copyright                 -->
+    <!-- ========================================== -->
+    <footer class="sticky-footer">
+        <div class="footer-container">
+            <!-- Footer Top: Brand & Social Links -->
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-logo-text">DevPortfolio</span>
+                    <p class="footer-tagline">Building the future, one line of code at a time</p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <a href="https://web.facebook.com/onu.ifunanya/?_rdc=1&_rdr#" target="_blank" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/joakim_concepts" target="_blank" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/onuifunanya1992-svg" target="_blank" class="social-link github" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/onu-ifunanya-9a1825366/" target="_blank" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/ifunanya_onu" target="_blank" class="social-link twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Bottom: Copyright -->
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 Software Developer Portfolio. All Rights Reserved.
+                </p>
+                <p class="footer-credit">
+                    Crafted with <i class="fas fa-heart"></i> and clean code
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT - Interactive Features          -->
+    <!-- ========================================== -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add animation class when skill cards enter viewport
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+
+</body>
+</html>
