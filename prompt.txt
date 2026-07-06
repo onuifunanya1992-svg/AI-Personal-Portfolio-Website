@@ -1,0 +1,30 @@
+hi kimi,am new software developer kindly build for me a Personal Portfolio website
+
+add a photo of me only at the right side of the hero section with description  of my expertise in software development which include html,css,tailwindcss,vipe coding and vipe engineering,js and natural language processing.
+
+The hero section should occupy at least 30% of the vertical length of the page and 100%  width of the page. 
+
+make the site a one page site
+
+Create an ATS-Compliant Resume / CV and link it to the hero section of the site
+
+Add comments to your code
+
+in the main section: 
+
+create two rows and three column  product card with items listed below as my skills which are:HTML,CSS,TAILWIND,VIPE CODING,VIPE ENGINEERING AND NATURAL LANGUAGE PROCESSING
+
+Each product cardbox should show a high level summary of what the skills set out to solve 
+
+the about section:
+
+ should include my contact details like phone number and email including my facebook,instagram,github.
+
+ add code for resume.html and the css styling, so i can edit and fill in my own personal information
+
+Build this page with HTML and external css
+
+Insert comments in your code so that my team member will be able to interpret and understand your code faster 
+
+Ensure that the Menu and Footer are sticky
+
