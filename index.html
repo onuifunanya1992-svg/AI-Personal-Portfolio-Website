@@ -16,6 +16,7 @@
     <title>My Portfolio | Software Developer</title>
     <!-- External CSS Link -->
     <link rel="stylesheet" href="./style.css">
+    
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -270,7 +271,7 @@
     <!-- PROJECTS SECTION                           -->
     <!-- Six project cards showcasing real work     -->
     <!-- ========================================== -->
-    <section class="projects-section" id="projects">
+  <section class="projects-section" id="projects">
         <div class="projects-container">
 
             <!-- Section Header -->
@@ -305,8 +306,7 @@
                             <span class="tech-tag">Community Building</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-headphones"></i> Listen</a>
-                            <a href="#" class="project-link"><i class="fab fa-spotify"></i> Spotify</a>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/pR2s6CzT2nY?si=WX6Bup9FB7Js4a6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </article>
@@ -320,9 +320,10 @@
                         <span class="project-category">Animation</span>
                     </div>
                     <div class="project-card-body">
-                        <h3 class="project-card-title">Children's Bed Time Story</h3>
+                        <h3 class="project-card-title">DreamTime Tales</h3>
                         <p class="project-card-desc">
-                            Animated bedtime story series for children featuring modern tales with every character teaches kindness. Built with CSS animations, SVG graphics, and 
+                            Animated bedtime story series for children featuring African folklore 
+                            and modern tales. Built with CSS animations, SVG graphics, and 
                             JavaScript-driven interactive storytelling elements.
                         </p>
                         <div class="project-tech-stack">
@@ -331,8 +332,8 @@
                             <span class="tech-tag">Storytelling</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-play-circle"></i> Watch</a>
-                            <a href="#" class="project-link"><i class="fab fa-youtube"></i> YouTube</a>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/4aQiVaTtlbA?si=6WEicNCaKn2a35B-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
                         </div>
                     </div>
                 </article>
@@ -358,7 +359,7 @@
                             <span class="tech-tag">Data Visualization</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-chart-pie"></i> Dashboard</a>
+                            <a href="./ntachiosa_brand_intelligence_report (1) (2).pptx" class="project-link"><i class="fas fa-chart-pie"></i> download</a>
                             <a href="#" class="project-link"><i class="fas fa-code-branch"></i> Case Study</a>
                         </div>
                     </div>
@@ -387,7 +388,7 @@
                             <span class="tech-tag">Illustration</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-amazon"></i> Amazon</a>
+                            <a href="https://www.amazon.com/dp/B0HBW89KF7" class="project-link"><i class="fab fa-amazon"></i> Amazon</a>
                             <a href="#" class="project-link"><i class="fas fa-book"></i> Preview</a>
                         </div>
                     </div>
@@ -415,6 +416,7 @@
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Site</a>
+                            <a href="#" class="project-link video-trigger" data-video="travel-site-demo"><i class="fas fa-play-circle"></i> Watch Demo</a>
                             <a href="#" class="project-link"><i class="fab fa-github"></i> Source</a>
                         </div>
                     </div>
@@ -441,7 +443,8 @@
                             <span class="tech-tag">Client Portal</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Site</a>
+                            <a href="https://onuifunanya1992-svg.github.io/joakim-concept/" class="project-link"><i class="fas fa-globe"></i> Live Site</a>
+                            <a href="#" class="project-link video-trigger" data-video="joakim-site-demo"><i class="fas fa-play-circle"></i> Watch Demo</a>
                             <a href="#" class="project-link"><i class="fas fa-images"></i> Portfolio</a>
                         </div>
                     </div>
@@ -692,7 +695,117 @@
         document.querySelectorAll('.skill-card').forEach(card => {
             observer.observe(card);
         });
+
+        // Add animation class when project cards enter viewport
+        document.querySelectorAll('.project-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // ==========================================
+        // VIDEO MODAL FUNCTIONALITY
+        // Opens YouTube videos in a lightbox modal
+        // when clicking "Watch" on project cards
+        // ==========================================
+
+        const videoModal = document.getElementById('videoModal');
+        const videoIframe = document.getElementById('videoIframe');
+        const videoTitle = document.getElementById('videoTitle');
+        const videoDesc = document.getElementById('videoDesc');
+
+        // Video database - map data-video IDs to YouTube embed URLs and info
+        // REPLACE THESE WITH YOUR ACTUAL YOUTUBE VIDEO IDs
+        const videoDatabase = {
+            'podcast-youtube-id': {
+                url: 'https://youtu.be/pR2s6CzT2nY',
+                title: 'CodeCast Nigeria - Episode 1',
+                desc: 'Software Engineering Podcast Episode'
+            },
+            'bedtime-story-demo': {
+                url: '',
+                title: 'DreamTime Tales - Animated Story',
+                desc: 'Childrens bedtime story'
+            },
+            'travel-site-demo': {
+                url: 'https://youtu.be/4aQiVaTtlbA',
+                title: 'Wanderlust Global - Website Demo',
+                desc: 'Travel Agency Website Walkthrough'
+            },
+            'joakim-site-demo': {
+                url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+                title: 'Joakim Concepts - Billboard Showcase',
+                desc: 'Outdoor Advertising Website Demo'
+            }
+        };
+
+        // Add click listeners to all video trigger buttons
+        document.querySelectorAll('.video-trigger').forEach(trigger => {
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                const videoId = this.getAttribute('data-video');
+                openVideoModal(videoId);
+            });
+        });
+
+        // Open modal and load video
+        function openVideoModal(videoId) {
+            const video = videoDatabase[videoId];
+            if (video) {
+                videoIframe.src = video.url;
+                videoTitle.textContent = video.title;
+                videoDesc.textContent = video.desc;
+                videoModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        }
+
+        // Close modal and stop video
+        function closeVideoModal() {
+            videoModal.classList.remove('active');
+            videoIframe.src = ''; // Stop video playback
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+                closeVideoModal();
+            }
+        });
     </script>
+
+
+    <!-- ========================================== -->
+    <!-- VIDEO MODAL / LIGHTBOX                     -->
+    <!-- Opens when clicking "Watch" on project     -->
+    <!-- cards to play YouTube videos inline        -->
+    <!-- ========================================== -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-overlay" onclick="closeVideoModal()"></div>
+        <div class="video-modal-content">
+            <!-- Close Button -->
+            <button class="video-modal-close" onclick="closeVideoModal()" aria-label="Close video">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Video Container -->
+            <div class="video-wrapper">
+                <iframe 
+                    id="videoIframe"
+                    src="" 
+                    title="Project Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Video Info -->
+            <div class="video-modal-info">
+                <h3 id="videoTitle">Project Video</h3>
+                <p id="videoDesc">Watch this project in action</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
